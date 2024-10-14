@@ -6,6 +6,6 @@
     "deploy": "wrangler pages publish ./src"
   },
   "devDependencies": {
-    "wrangler": "^1.15.0"
+    "wrangler": "^3.80.4"
   }
 }

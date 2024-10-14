@@ -1,10 +1,11 @@
 {
-  "name": "js-tiktoken",
+  "name": "@dingyi222666/js-tiktoken",
   "version": "1.0.15",
   "description": "JavaScript port of tiktoken",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && tsup && cp -R src/ranks dist/ranks",
+    "build:shx": "shx rm -rf dist && tsup && node replace.js && shx mkdir -p dist/ranks && shx cp -r src/ranks/* dist/ranks",
     "test": "vitest run"
   },
   "type": "module",
@@ -73,6 +74,8 @@
     "access": "public"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "shx": "^0.3.4",
     "tsup": "^6.7.0"
   },
   "tsup": {

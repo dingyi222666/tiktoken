@@ -45,3 +45,5 @@ target/
 ranks/
 node_modules
 .turbo
+
+.yarn

@@ -9,6 +9,8 @@ Install the library from NPM:
 npm install js-tiktoken
 ```
 
+**This fork remove the default encoding files, you need to load the encoding files by yourself.**
+
 ## Usage
 
 Basic usage follows, which includes all the OpenAI encoders and ranks:
