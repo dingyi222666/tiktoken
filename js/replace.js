@@ -31,3 +31,10 @@ ranks
             fs.writeFileSync(fullPath, emptyESMContent);
         }
     });
+
+ranks.filter((rank) => rank.endsWith('.json') || rank.endsWith('.tiktoken'))
+    .forEach((rank) => {
+        const fullPath = `./src/ranks/${rank}`;
+        fs.rmSync(fullPath);
+    });
+
